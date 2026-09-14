@@ -26,7 +26,7 @@ I'm being informally mentored by **Justin Rowland**, a Data Analytics Instructor
 - He suggested an entry-level predictive modeling project as a starting point — conceptually, basic regression (y = mx + b) applied to financial data: pick a variable, try to predict another variable from it, see how well it works.
 - We agreed on a **2-week check-in cadence**, with him giving feedback along the way rather than just at the end.
 
-## Working philosophy for this project (rules Claude Code should follow with me)
+## Working philosophy for this project
 
 **Updated 2026-09-09:** switched from build-with-me-incrementally to build-it-end-to-end.
 Reasoning (my own words): "this is your project, do absolutely everything and just
@@ -66,7 +66,7 @@ to be real, just delivered after the build instead of gating each cell.
   tends to hover near a coin flip.
 - ~~Tied to my DECA Stock Market Game holdings~~ — explicitly rejected by me: "it
   doesn't have to be DECA stock related, in fact I don't want it to be, it was just my
-  experience." Claude picks the stock/asset, not tied to my portfolio.
+  experience." I let the topic stay open rather than picking something tied to my portfolio.
 - **Chosen crux: estimate a stock's market beta via simple linear regression of its
   daily returns against a market benchmark's (S&P 500 / SPY) daily returns** —
   `stock_return = β · market_return + α`. Uses returns, not price levels, which avoids
