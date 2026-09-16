@@ -10,28 +10,32 @@
 
 ## Mentor context
 
-I'm being informally mentored by **Justin Rowland**, a Data Analytics Instructor at Wake Tech Community College, with prior industry experience at SAS, Epic Games, and MaxPoint. This is not a formal internship — it's an informal mentorship that started from a cold email and a 30-minute intro call.
+I'm being informally mentored by **Justin Rowland**, a Data Analytics Instructor at Wake Tech Community College, with prior industry experience at SAS, Epic Games, and MaxPoint. This is not a formal internship — it's an informal mentorship that started from a cold email, a 30-minute intro call, and some async emails since.
 
-### Exact guidance Rowland gave me
-- Build subject-matter expertise in a domain (finance, in my case) before trying to become a professional data scientist — the domain knowledge matters as much as the technical skill.
-- Be statistics-heavy in how I approach this — understand the stats underlying any model, not just the code.
-- He can teach me the actual data science functions and practices over a period of weeks.
-- This should be self-directed learning on my end, not him spoon-feeding a curriculum — he's giving structure, I do the work.
-- Use the **Anaconda distribution** with **Jupyter Notebook** as the working environment.
-- **Critical rule: slow down and make sure I understand what AI-generated code is doing before executing it.** He's fine with me using AI assistance ("vibe coding") — his concern isn't the tool, it's blindly running code I can't explain. Understanding first, execution second.
-- Curiosity and figuring things out one line/piece at a time is the actual skill being built — the puzzle-solving process matters more than speed.
-- Instead of working on one of his existing projects, I should pick a topic I'm personally interested in and build my own project — he will review my work and give feedback, rather than assign me a task.
-- There is a huge amount of financial data and free APIs available — the actual challenge is finding a "crux": one specific, well-scoped question to build a project around, not exploring everything at once.
-- He is sending me labs, instructional videos, and documentation to get started with the fundamentals.
-- He suggested an entry-level predictive modeling project as a starting point — conceptually, basic regression (y = mx + b) applied to financial data: pick a variable, try to predict another variable from it, see how well it works.
-- We agreed on a **2-week check-in cadence**, with him giving feedback along the way rather than just at the end.
+### What Rowland has actually told me, directly
+This is the real, complete list. I want to be careful not to inflate it into more than it is:
+1. What data science is, broadly, as a field.
+2. Where it gets applied, including in finance.
+3. Start with something simple and develop/iterate from there — concretely, an entry-level regression (`y = mx + b`): pick one variable, try to predict another from it, and see how well it works.
+
+That's it. He hasn't (yet) taught me train/test splitting, `statsmodels`, standard errors/hypothesis testing, or any of the heavier statistics that show up later in this project (see `v3_advanced_extension.ipynb`) — those are my own extension, built with AI assistance and disclosed as such.
+
+### My own plan and assumptions, built on top of that
+Everything below this point is *my* interpretation and *my* plan for running this project — not additional instructions from Rowland. I'm writing it down so I don't lose track of my own reasoning, but it should read as "what I decided," not "what he said":
+- My own choice: approach this in a statistics-heavy way — understand the stats underlying any model, not just the code — since that's the natural direction once the "simple" version starts raising questions.
+- My own assumption: building subject-matter expertise in finance alongside the technical skill is worth doing, since finance is a domain I already know something about (DECA, equity research). Rowland didn't tell me to do this; it's my own reasoning about how to use the time.
+- My own environment choice: using the Anaconda distribution with Jupyter Notebook, since it's a common, well-supported setup for this kind of work — not something he required.
+- My own standard, not a rule he handed me: I want to be able to explain any AI-assisted code before I run it. I've disclosed to him (and to my school) that I'm using AI assistance, and neither has objected, but "understand it before you run it" is discipline I'm holding myself to, not a line from him.
+- My own read on structure: rather than working one of his existing projects, I'm picking my own topic, building it out, and bringing it to him for feedback — that's how an informal, self-directed mentorship like this seems like it should work, not something he laid out as a rule.
+- My own read on scope: there's a huge amount of free financial data and APIs out there, so the actual work on my end is finding a specific, well-scoped "crux" question rather than trying to explore everything at once.
+- My own assumption on cadence: I'm aiming to check in with him roughly every couple of weeks with real, even rough, progress — that felt like a reasonable rhythm for this kind of relationship, but it isn't a schedule we've formally locked in.
 
 ## Working philosophy for this project
 
 **Updated 2026-09-09:** switched from build-with-me-incrementally to build-it-end-to-end.
 Reasoning (my own words): "this is your project, do absolutely everything and just
-explain at the end." The mentor's actual rule was never "review every line as it's
-written" — it was "you must be able to explain the code, not just run it." Those are
+explain at the end." My own standard for this was never "review every line as it's
+written" — it's that I need to be able to explain the code, not just run it. Those are
 different constraints, so the explanation step below is still mandatory and still has
 to be real, just delivered after the build instead of gating each cell.
 
@@ -46,8 +50,9 @@ to be real, just delivered after the build instead of gating each cell.
    not just a high-level summary.
 4. **This is a learning project, not a production system.** Prioritize clarity and my
    eventual comprehension over elegance, performance, or scale.
-5. I am allowed to use AI assistance throughout (confirmed acceptable by my mentor and
-   by my school) — the constraint is comprehension, not tool usage.
+5. I am using AI assistance throughout — something I've disclosed to my mentor and to
+   my school, and neither has objected — the constraint I'm holding myself to is
+   comprehension, not tool usage.
 
 ## The actual project scope
 
@@ -83,10 +88,10 @@ to be real, just delivered after the build instead of gating each cell.
 
 ## Timeline
 
-- **Weeks 1–4:** Environment setup, work through Rowland's labs/videos/docs as they arrive, pick the specific project topic ("crux"), build the entry-level regression model with real understanding of each step.
+- **Weeks 1–4:** Environment setup, work through any labs/videos/materials Rowland sends plus stuff I find on my own, pick the specific project topic ("crux"), build the entry-level regression model with real understanding of each step.
 - **Weeks 4–8:** Scale up the project (more features, better evaluation, cleaner visualization), incorporate feedback from Rowland's check-ins.
 - **~Week 8:** Project reaches a genuinely presentable state. Plan to publish it (LinkedIn post + possibly GitHub).
-- **Check-ins with Rowland:** every 2 weeks, bringing real (even rough/incomplete) progress each time — not polished status updates.
+- **Check-ins with Rowland:** roughly every couple of weeks (my own aim, not a fixed schedule we've agreed to), bringing real (even rough/incomplete) progress each time — not polished status updates.
 
 ## What "done" looks like for version 1
 
@@ -112,7 +117,7 @@ This document should be treated as the current source of truth for the project's
 ## Running log (lab notes)
 
 Honest record of what was tried and what it showed — material for the check-ins with
-Rowland, who asked for rough progress rather than polished updates.
+Rowland. Keeping it rough and honest here is my own choice, not something he demanded.
 
 ### 2026-09-09 — v1 built end-to-end (`stock_beta_regression.ipynb`)
 
@@ -167,8 +172,8 @@ reason practitioners quote *rolling* beta rather than one fixed number.
    more standard framing to report full-period beta with a confidence interval?
 2. Should beta be estimated on a rolling window instead of one fixed split?
 3. `LinearRegression` gives no standard errors or p-values on the slope. Is
-   `statsmodels.OLS` the expected tool once inference matters, per the "be
-   statistics-heavy" guidance?
+   `statsmodels.OLS` the expected tool once inference matters, given my own
+   statistics-heavy approach to this?
 
 **Known gaps in v1:** no standard error / confidence interval on beta; no residual
 diagnostics (normality, heteroskedasticity, autocorrelation); single stock, single

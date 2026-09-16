@@ -47,7 +47,7 @@ The data comes straight from Yahoo Finance through `yfinance`, so if you run thi
 
 ## Why this exists
 
-My mentor's actual rule for this project was never "review every line before you run it." It was that I need to be able to explain what the code is doing and why, not just get it to run. `PROJECT_NOTES.md` is where I kept track of that honestly as I went, including the parts that didn't work the first time.
+The standard I'm holding myself to for this project isn't "review every line before you run it." It's that I need to be able to explain what the code is doing and why, not just get it to run — that's a bar I set for myself, not a rule my mentor handed down. `PROJECT_NOTES.md` is where I kept track of that honestly as I went, including the parts that didn't work the first time.
 
 ## License
 
